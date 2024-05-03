@@ -18,7 +18,7 @@ describe('Login Tests', () => {
         await LoginPage.login( 'xzsgdgdg', 'gdxdfd' )
         const error = LoginPage.errorMsg
         await error.waitForDisplayed()
-        expect(await error.getText()).to.equal('vfgIncorrect username or password')
+        expect(await error.getText()).to.equal('Incorrect username or password')
     })
 
     it('should login with valid credentials', async () => {
